@@ -1,0 +1,77 @@
+.numerico {
+  width: 100px;
+  height: 60px;
+  cursor: pointer;
+  color: white;
+  background: #1C1C1C;
+  padding: 7% 7%; /* Reduced padding */
+  border-radius: 2px;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: Arial;
+  text-align: start;
+  box-shadow: 0 6px 0 black;
+  transition: .3s;
+  margin: 0 3%;
+}
+  .numerico:active {
+    transform: translateY(5px);
+    box-shadow: 0 3px 0 black;
+  }
+
+
+.confirmar {
+  cursor: pointer;
+  border: 0;
+  color: BLACK;
+  background: rgb(64, 167, 39);
+  padding: 7% 7%; /* Reduced padding */
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 80%; /* Increased font size */
+  font-family: Montserrat;
+  box-shadow: 0 6px 0 green;
+  transition: .3s;
+}
+  .confirmar:active {
+    transform: translateY(5px);
+    box-shadow: 0 3px 0 black;
+  }
+
+  .corrige {
+    cursor: pointer;
+    border: 0;
+    color: BLACK;
+    background: rgb(230, 131, 19);
+    padding: 7% 7%;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 80%;
+    font-family: Montserrat;
+    box-shadow: 0 6px 0 orange;
+    transition: .3s;
+  }
+  
+  .corrige:active {
+    transform: translateY(5px);
+    box-shadow: 0 3px 0 black;
+  }
+
+  .branco {
+    cursor: pointer;
+    border: 0;
+    color: BLACK;
+    background: rgb(224, 217, 209);
+    padding: 7% 7%;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 80%;
+    font-family: Montserrat;
+    box-shadow: 0 6px 0 rgb(168, 165, 159);
+    transition: .3s;
+  }
+  
+  .branco:active {
+    transform: translateY(5px);
+    box-shadow: 0 3px 0 black;
+  }

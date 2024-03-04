@@ -2,13 +2,14 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
+import ButtonUrna from './componetes/Confirmar';
 
 export default function ThreeBoxes() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container>
+      <Container justifyContent="center" position="fixed"
+      >
         <Box
           height={700}
           width="100%"
@@ -30,7 +31,7 @@ export default function ThreeBoxes() {
             p={2}
             sx={{ border: '2px solid grey', bgcolor: 'white', flexGrow: 1 }}
           >
-            <img src="\src\componetes\image\Brasao.jpg" alt="Imagem"  height={300} width={800} />
+            <img src="\src\componetes\image\Brasao.jpg" alt="Imagem" height={300} width={800} />
           </Box>
 
           {/* Adicionando a terceira boz preta */}
@@ -43,15 +44,39 @@ export default function ThreeBoxes() {
             gap={4}
             p={2}
             ml={4}
-            sx={{ border: '2px solid grey', bgcolor: '#1a1d22', flexShrink: 0 }}
+            sx={{ border: '2px solid grey', bgcolor: '#4F4F4F', flexShrink: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}
           >
-            <Button variant="contained" color="success">
-              Button
-            </Button>
+            {/* Numeros pretos*/}
+            <Box display={'flex'} flexDirection={'row'} >
+              <ButtonUrna className={"numerico"} name={"1"} />
+              <ButtonUrna className={"numerico"} name={"2"} />
+              <ButtonUrna className={"numerico"} name={"3"} />
+            </Box>
+            <Box display={'flex'} flexDirection={'row'} >
+              <ButtonUrna className={"numerico"} name={"4"} />
+              <ButtonUrna className={"numerico"} name={"5"} />
+              <ButtonUrna className={"numerico"} name={"6"} />
+            </Box>
+            <Box display={'flex'} flexDirection={'row'}>
+              <ButtonUrna className={"numerico"} name={"7"} />
+              <ButtonUrna className={"numerico"} name={"8"} />
+              <ButtonUrna className={"numerico"} name={"9"} />
+            </Box>
+            <Box display={'flex'} flexDirection={'row'} >
+              <ButtonUrna className={"numerico"} name={"0"} />
+            </Box>
+
+            {/* Botões de voto*/}
+            <Box display="flex" position="relative" left="-15%" gap={1}>
+              <ButtonUrna className={"branco"} name={"BRANCO"} />
+              <ButtonUrna className={"corrige"} name={"CORRIGE"} />
+              <ButtonUrna className={"confirmar"} name={"CONFIRMAR"} />
+            </Box>
+
             {/* Conteúdo da terceira boz preta */}
           </Box>
         </Box>
       </Container>
     </React.Fragment>
   );
-} 
+}
