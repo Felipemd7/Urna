@@ -1,3 +1,19 @@
+.numeroVoto {
+  width: 100px;
+  height: 60px;
+  cursor: pointer;
+  color: rgb(17, 17, 17);
+  background: #f5f3f3;
+  padding: 7% 7%; /* Reduced padding */
+  border-radius: 2px;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: Arial;
+  text-align: start;
+  box-shadow: 0 6px 0 black;
+  transition: .3s;
+  margin: 0 3%;
+}
 .numerico {
   width: 100px;
   height: 60px;

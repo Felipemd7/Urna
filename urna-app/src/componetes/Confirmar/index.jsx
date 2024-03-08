@@ -7,6 +7,7 @@ function ButtonUrna(props){
     return(
        <div className={props.className}>
         {props.name}
+        {props.numero}
        </div>      
        
     )

@@ -1,14 +1,17 @@
-import * as React from 'react';
+import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import ButtonUrna from './componetes/Confirmar';
 
 export default function ThreeBoxes() {
+  
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container justifyContent="center" position="fixed"
+      <Container
+        style={{ display: 'flex', justifyContent: 'center' }}
+        position="fixed"
       >
         <Box
           height={700}
@@ -30,8 +33,20 @@ export default function ThreeBoxes() {
             gap={4}
             p={2}
             sx={{ border: '2px solid grey', bgcolor: 'white', flexGrow: 1 }}
+
+            
           >
-            <img src="\src\componetes\image\Brasao.jpg" alt="Imagem" height={300} width={800} />
+            <Container display={'flex'} flexDirection={'row'}>
+            <Box display={'flex'} flexDirection={'row'} >
+              <ButtonUrna className={"numeroVoto"} name={"1"}/>
+              <ButtonUrna className={"numeroVoto"} name={"1"}/>
+            </Box>
+            <Box display= "flex" flexDirection={'column'}>
+            <h2>CARGO</h2>
+            <h2>NOME CANDITADO</h2>
+            <h2>PARTIDO</h2>
+            </Box>
+            </Container>
           </Box>
 
           {/* Adicionando a terceira boz preta */}
@@ -49,8 +64,8 @@ export default function ThreeBoxes() {
             {/* Numeros pretos*/}
             <Box display={'flex'} flexDirection={'row'} >
               <ButtonUrna className={"numerico"} name={"1"} />
-              <ButtonUrna className={"numerico"} name={"2"} />
-              <ButtonUrna className={"numerico"} name={"3"} />
+              <ButtonUrna className={"numerico"} name={"2"}  />
+              <ButtonUrna className={"numerico"} name={"3"}  o />
             </Box>
             <Box display={'flex'} flexDirection={'row'} >
               <ButtonUrna className={"numerico"} name={"4"} />
