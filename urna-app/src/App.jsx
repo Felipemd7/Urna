@@ -1,7 +1,7 @@
 import React from 'react';
-// import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
+
+import {Box, CssBaseline, Container} from '@mui/material';
+
 import ButtonUrna from './componetes/Confirmar';
 
 export default function ThreeBoxes() {
